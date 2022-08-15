@@ -1,0 +1,158 @@
+
+:root {
+    --text-color: #000;
+    --blue-color: #0067B8;
+    --white-color: #fff;
+    --header-height: 54px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.pad-l-26 {
+    padding-left: 26px;
+}
+.heading {
+    padding-top: 48px;
+}
+
+/* BTN black */
+
+.btn--black {
+    background-color: var(--text-color);
+
+}
+.btn--black .btn__link , .btn--black .btn__icon {
+    color: var(--white-color);
+}
+.btn--black .btn__link::before {
+    background-color: var(--white-color);
+}
+.btn--black .btn__link:hover {
+    transform: translateX(-5px);
+}
+
+/* BTN normal */
+
+.btn--normal {
+    background-color: transparent;
+
+}
+.btn--normal .btn__link , .btn--normal .btn__icon {
+    color: var(--text-color);
+}
+.btn--normal .btn__link::before {
+    background-color: var(--text-color);
+}
+
+/* BTN Blue */
+.btn--blue {
+    background-color: transparent;
+
+}
+.btn--blue .btn__link , .btn--blue .btn__icon {
+    color: var(--blue-color);
+}
+.btn--blue .btn__link::before {
+    background-color: var(--blue-color);
+}
+/* BTN Size */
+.btn--short .btn__link::before {
+    width: 91% !important;
+    
+}
+.btn--long .btn__link::before {
+    width: 95% !important;
+    
+}
+
+/* BTN Black Short */
+.btn--black__short {
+    width: 165px;
+}
+
+
+
+
+
+.btn {
+    width: 230px;
+    display: flex;
+}
+.btn__link {
+    display: block;
+    text-decoration: none;
+    padding: 12px 0;
+    transition: .3s;
+    position: relative;
+}
+.btn__link:hover {
+    transition: .3s;
+}
+.btn__icon {
+    transition: .3s;
+}
+.btn__link:hover .btn__icon {
+    transform: translateX(8px);
+}
+.btn__link::before {
+    content: '';
+    display: none;
+    position: absolute;
+    height: 2px;
+    width: 93%;
+    bottom: 9px;
+}
+.btn__link:hover:before {
+    display: block;
+}
+/* Modal */
+.modal.open {
+    display: flex;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    animation: ease-in .2s;
+    z-index: 10;
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    animation: fadeOut .3s;
+}
+.modal__body {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+/* Button */
+.button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 24px;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.button--primary {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.button--default {
+    background-color: #eee;
+    color: var(--text-color);
+}
+/* Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

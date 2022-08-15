@@ -1,0 +1,120 @@
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+    .pad {
+        padding: 0 18px;
+    }
+    .btn--black__short {
+        width: 165px !important;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+    .logo__img {
+        padding-right: 0;
+    }
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: .98;
+        z-index: 2;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.03);
+    }
+    #product , #footer , #social {
+        padding: 24px;
+    }
+    .heading {
+        padding-left: 24px;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .pad {
+        padding: 0;
+    }
+    #quick-links {
+        display: block;
+    }
+    .quick-links--item {
+        display: flex;
+        align-items: flex-end;
+        padding: 12px 0;
+        width: unset;
+    }
+    .quick-links--item__link {
+        padding: 4px 12px;
+    }
+    .quick-links--img {
+        height: 20px;
+    }
+    .slide {
+        align-items: flex-end;
+    }
+    .slide__content {
+        background-color: #e6e6e6;
+        text-align: center;
+        padding: 56px 24px;
+        max-width: unset;
+        width: 100%;
+        animation: none;
+    }
+    .slide__heading {
+        font-size: 20px;
+    }
+    .slide__text {
+        text-align: unset;
+    }
+    .slide__btn {
+        justify-content: center;
+        width: 100% !important;
+    }
+    .pad-l-26 {
+        padding: 0 !important;
+    }
+    .slide-for--tablet {
+        background-image: url('/assets/img/slide-mobile-1.webp') !important;
+        background-size: contain;
+        margin-top: var(--header-height);
+        height: 518px;
+    }
+    .slide-outlook-for--tablet {
+        background-image: url('/assets/img/slide-mobile-outlook.webp') !important;
+        background-size: contain;
+    }
+    .auth-form__input {
+        width: 260px;
+    }
+}
+
+/* Tablet */ 
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .slide__content {
+        padding: 0 45px;
+        max-width: 430px;
+    }
+    .slide-for--tablet {
+        background-image: url('/assets/img/slide-tablet-1.jpg') !important;
+    }
+    .slide-outlook-for--tablet {
+        background-image: url('/assets/img/slide-tablet-outlook.webp') !important;
+    }
+    .pad {
+        padding: 0 12px;
+    }
+    .btn--black__short {
+        width: 165px !important;
+    }
+}   
