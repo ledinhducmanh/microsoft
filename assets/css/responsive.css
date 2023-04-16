@@ -82,13 +82,13 @@
         padding: 0 !important;
     }
     .slide-for--tablet {
-        background-image: url('/assets/img/slide-mobile-1.webp') !important;
+        background-image: url('../img/slide-mobile-1.webp') !important;
         background-size: contain;
         margin-top: var(--header-height);
         height: 518px;
     }
     .slide-outlook-for--tablet {
-        background-image: url('/assets/img/slide-mobile-outlook.webp') !important;
+        background-image: url('../img/slide-mobile-outlook.webp') !important;
         background-size: contain;
     }
     .auth-form__input {
@@ -106,10 +106,10 @@
         max-width: 430px;
     }
     .slide-for--tablet {
-        background-image: url('/assets/img/slide-tablet-1.jpg') !important;
+        background-image: url('../img/slide-tablet-1.jpg') !important;
     }
     .slide-outlook-for--tablet {
-        background-image: url('/assets/img/slide-tablet-outlook.webp') !important;
+        background-image: url('../img/slide-tablet-outlook.webp') !important;
     }
     .pad {
         padding: 0 12px;
